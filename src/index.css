@@ -1,0 +1,12 @@
+
+.leaflet-container {
+  height: 600px;
+  border-radius: 5px;
+ 
+  display: flex;
+  place-items: center;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
