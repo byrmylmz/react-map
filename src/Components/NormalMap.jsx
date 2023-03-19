@@ -13,22 +13,24 @@ function NormalMap() {
   });
 
   return (
-      <div className="" >
-        <div className="map" id="map">
-          <MapContainer center={position} scrollWheelZoom={true} zoom={19} >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              maxZoom={22}
-              maxNativeZoom={19}
-            />
-            <Marker position={position} icon={customIcon}>
-              <Popup>Library 1</Popup>
-            </Marker>
-            <Marker position={position1} icon={customIcon}>
-              <Popup>Library 2</Popup>
-            </Marker>
-          </MapContainer>
+      <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 " >
+        <div className="grid content-center  ">
+          <div className="max-w-4xl " id="map">
+            <MapContainer center={position} scrollWheelZoom={true} zoom={19} >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                maxZoom={22}
+                maxNativeZoom={19}
+              />
+              <Marker position={position} icon={customIcon}>
+                <Popup>Library 1</Popup>
+              </Marker>
+              <Marker position={position1} icon={customIcon}>
+                <Popup>Library 2</Popup>
+              </Marker>
+            </MapContainer>
+          </div>
         </div>
       </div>
   );
