@@ -2,6 +2,7 @@ import signal from "../assets/wifi-signal.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
+import '../map.css'
 
 function NormalMap() {
   const position = [40.99812, 39.77223];
@@ -13,9 +14,9 @@ function NormalMap() {
   });
 
   return (
-      <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 " >
-        <div className="grid content-center  ">
-          <div className="max-w-4xl" id="map">
+      <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500" >
+        <div class="wrap" >
+          <div className="map" id="map">
             <MapContainer center={position} scrollWheelZoom={true} zoom={19} >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
