@@ -1,10 +1,9 @@
-import signal from "./assets/wifi-signal.png";
-import "./App.css";
+import signal from "../assets/wifi-signal.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-function App() {
+function NormalMap() {
   const position = [40.99812, 39.77223];
   const position1 = [40.99805, 39.77170];
 
@@ -35,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default NormalMap;
