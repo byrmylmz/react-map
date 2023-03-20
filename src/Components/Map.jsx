@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-
+import "leaflet.heat";
 import { addressPoints } from "./addressPoints";
 
 export default function Map() {
