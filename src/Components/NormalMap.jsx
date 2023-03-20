@@ -27,6 +27,7 @@ function NormalMap() {
               <Marker position={position} icon={customIcon}>
                 <Popup>Library 1</Popup>
               </Marker>
+              
               <Marker position={position1} icon={customIcon}>
                 <Popup>Library 2</Popup>
               </Marker>

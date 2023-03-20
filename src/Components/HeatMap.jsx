@@ -1,9 +1,33 @@
-import React, { Component } from 'react'
+import React, { useEffect } from "react";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import "leaflet.heat";
+import '../map.css'
+
+
 
 const HeatMap = () => {
+    useEffect(() => {
+        var map = L.map("map").setView([40.99812, 39.77223], 18);
+    
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+         L.heatLayer([
+          [40.99812, 39.77223, 0.8],
+          [40.99805, 39.77170, 0.5 ],
+         
+        ], {radius: 20}).addTo(map);
+    
+      }, []);
+
     return ( 
         <div className='h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
-            <h1 className='text-center text-white text-5xl align-text-bottom font-semibold font-sans'>Heat map</h1>
+             <div class="wrap">
+                 <div id="map" ></div>
+             </div>
         </div>
      );
 }

@@ -13,13 +13,12 @@ export default function Map() {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    const points = addressPoints
-      ? addressPoints.map((p) => {
-          return [p[0], p[1]];
-        })
-      : [];
+     L.heatLayer([
+      [40.99812, 39.77223, 0.8],
+      [40.99805, 39.77170, 0.5 ],
+     
+    ], {radius: 20}).addTo(map);
 
-    L.heatLayer(points).addTo(map);
   }, []);
 
   return <div id="map" style={{ height: "100vh" }}></div>;
