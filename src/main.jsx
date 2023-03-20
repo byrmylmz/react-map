@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: <FloorMap/>,
       },
       {
-        path: "/map",
+        path: "/heat",
         element: <Map/>,
       },
     ],
