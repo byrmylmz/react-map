@@ -24,7 +24,7 @@ const HeatMap = () => {
       }, []);
 
     return ( 
-        <div className='h-screen bg-gradient-to-r from-cyan-500 to-blue-500'>
+        <div className=''>
              <div class="wrap">
                  <div id="map" ></div>
              </div>

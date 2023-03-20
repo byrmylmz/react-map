@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import App from '../Components/NormalMap';
 const Layout = () => {
   return (
-    <div> 
+    <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500"> 
       <Navbar/>
       <Outlet/>
     </div>

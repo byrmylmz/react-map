@@ -14,7 +14,7 @@ function NormalMap() {
   });
 
   return (
-      <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500" >
+      <div className="" >
         <div class="wrap" >
           <div className="map" id="map">
             <MapContainer center={position} scrollWheelZoom={true} zoom={19} >
@@ -27,7 +27,7 @@ function NormalMap() {
               <Marker position={position} icon={customIcon}>
                 <Popup>Library 1</Popup>
               </Marker>
-              
+
               <Marker position={position1} icon={customIcon}>
                 <Popup>Library 2</Popup>
               </Marker>

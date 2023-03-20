@@ -12,7 +12,7 @@ export default function Example() {
         <body class="h-full">
         ```
       */}
-      <div className="h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+      <div className="">
           <main className="grid align-top place-items-center py-24 px-6 sm:py-32 lg:px-8  ">
             <div className="text-center ">
           
