@@ -38,6 +38,7 @@ const HeatMap = () => {
       .bindPopup("<b>Library 2!</b><br>Information.")
       .addTo(map);
   }, []);
+  
 
   return (
     <div className="">

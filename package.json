@@ -11,7 +11,9 @@
   "dependencies": {
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.16",
+    "jquery": "^3.6.4",
     "leaflet": "^1.9.3",
+    "leaflet-indoor-pytek": "^1.0.1",
     "leaflet.heat": "^0.2.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
