@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import "leaflet.heat";
+
 import { addressPoints } from "./addressPoints";
 
 export default function Map() {
   useEffect(() => {
-    var map = L.map("map").setView([-37.87, 175.475], 12);
+    var map = L.map("map").setView([40.99812, 39.77223], 18);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
