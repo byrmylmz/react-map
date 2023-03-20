@@ -8,11 +8,13 @@ import "../map.css";
 const HeatMap = () => {
   useEffect(() => {
     // init map
-    var map = L.map("map").setView([40.99812, 39.77223], 18);
+    var map = L.map("map").setView([40.99812, 39.77223], 19);
     
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom:19,
+        maxNativeZoom:19
     }).addTo(map);
     // Heat layer
     L.heatLayer(
