@@ -4,9 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink, Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Normal Map", href: "normalmap", current: true },
-  { name: "Heat Map", href: "heatmap", current: false },
-  { name: "Floor Plan", href: "floormap", current: false },
+  { name: "Normal Map", href: "/normalmap", current: true },
+  { name: "Heat Map", href: "/heatmap", current: false },
+  { name: "Floor Plan", href: "/floormap", current: false },
 ];
 
 function classNames(...classes) {
