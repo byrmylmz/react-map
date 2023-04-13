@@ -7,6 +7,7 @@ const navigation = [
   { name: "Normal Map", href: "/normalmap", current: true },
   { name: "Heat Map", href: "/heatmap", current: false },
   { name: "Floor Plan", href: "/floormap", current: false },
+  { name: "Indoor Plan", href: "/indoormap", current: false },
 ];
 
 function classNames(...classes) {

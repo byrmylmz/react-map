@@ -10,8 +10,7 @@ import NormalMap from './Components/NormalMap'
 import HeatMap from './Components/HeatMap'
 import FloorMap from './Components/FloorMap'
 import Dashboard from './Components/Dasboard';
-import Map from './Components/Map';
-
+import IndoorMap from './Components/IndoorMap';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,8 +34,8 @@ const router = createBrowserRouter([
         element: <FloorMap/>,
       },
       {
-        path: "/heat",
-        element: <Map/>,
+        path: "/indoormap",
+        element: <IndoorMap/>,
       },
     ],
   },
