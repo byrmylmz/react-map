@@ -2,7 +2,6 @@ const TodoList = () => {
     return ( 
         <>
         
-       
         <ul className="w-80 text-left text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
             <li className="w-full border-b border-gray-200 rounded-t-lg dark:border-gray-600">
                 <div className="flex items-center pl-3">

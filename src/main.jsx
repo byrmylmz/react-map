@@ -37,6 +37,7 @@ const router = createBrowserRouter([
         path: "/indoormap",
         element: <IndoorMap/>,
       },
+      
     ],
   },
 ]);
