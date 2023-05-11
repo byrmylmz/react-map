@@ -21,9 +21,8 @@ const IndoorMap = () => {
         draggable: false,
         zIndex: 100,
         id: 1,
-        clickable: false,
+        clickable: true,
       });
-      // eslint-disable-next-line no-loop-func
 
       marker.addTo(map);
     };
